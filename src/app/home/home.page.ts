@@ -45,7 +45,7 @@ export class HomePage {
     L.control.layers(baseMaps).addTo(this.map);
 
     const customIcon = L.icon({
-      iconUrl: 'https://static.vecteezy.com/system/resources/thumbnails/014/301/029/small_2x/red-pin-for-pointing-the-destination-on-the-map-3d-illustration-png.png',
+      iconUrl: 'assets/icon/marker.png',
       iconSize: [25, 25],
       iconAnchor: [12, 25],
       popupAnchor: [0, -25],
@@ -54,11 +54,10 @@ export class HomePage {
     const markersData = [
       { coords: [-7.7698422, 110.3745493], popup: 'Universitas Gadjah Mada' },
       { coords: [-7.785927, 110.370805], popup: 'Tugu Yogyakarta' },
-      { coords: [-7.752107, 110.377329], popup: 'Keraton Yogyakarta' },
+      { coords: [-7.752107, 110.377329], popup: 'Monumen Jogja Kembali' },
       { coords: [-7.782073, 110.363931], popup: 'Malioboro' },
     ];
 
-    // Loop through the markers data to add markers
     markersData.forEach(markerInfo => {
       const marker = L.marker(markerInfo.coords as [number, number], { icon: customIcon }).addTo(this.map);
       marker.bindPopup(markerInfo.popup);
