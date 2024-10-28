@@ -14,7 +14,7 @@ export class HomePage {
   ngOnInit() {}
 
   ionViewDidEnter() {
-    this.map = L.map('mapId').setView([-7.768938753815898, 110.37778430008716], 12);
+    this.map = L.map('mapId').setView([-7.7679387538159, 110.37778430008716], 14);
 
     const osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -52,10 +52,14 @@ export class HomePage {
     });
 
     const markersData = [
-      { coords: [-7.7698422, 110.3745493], popup: 'Universitas Gadjah Mada' },
-      { coords: [-7.785927, 110.370805], popup: 'Tugu Yogyakarta' },
-      { coords: [-7.752107, 110.377329], popup: 'Monumen Jogja Kembali' },
-      { coords: [-7.782073, 110.363931], popup: 'Malioboro' },
+      { coords: [-7.7698422, 110.3745493],
+        popup: '<b>Universitas Gadjah Mada</b><br><img src="assets/image/UGM.jpg" width="100px" alt="UGM" style="display: block; margin: 0 auto;">' },
+      { coords: [-7.785927, 110.370805],
+        popup: '<b>Tugu Yogyakarta</b><br><img src="assets/image/Tugu.jpg" width="100px" alt="Tugu" style="display: block; margin: 0 auto;">'
+      },
+      { coords: [-7.752107, 110.377329],
+        popup: '<b>Monumen Jogja Kembali</b><br><img src="assets/image/Monjali.jpg" width="100px" alt="Monjali" style="display: block; margin: 0 auto;">'
+      }
     ];
 
     markersData.forEach(markerInfo => {
