@@ -53,12 +53,13 @@ export class HomePage {
 
     const markersData = [
       { coords: [-7.7698422, 110.3745493],
-        popup: '<b>Universitas Gadjah Mada</b><br><img src="assets/image/UGM.jpg" width="100px" alt="UGM" style="display: block; margin: 0 auto;">' },
+        popup: '<b>Universitas Gadjah Mada</b><br><img src="assets/image/UGM.jpg" width="500px" alt="UGM" style="display: block; margin: 0 auto;"><p>Bulaksumur, Kecamatan Depok, Kabupaten Sleman, DI. Yogyakarta</p>'
+      },
       { coords: [-7.785927, 110.370805],
-        popup: '<b>Tugu Yogyakarta</b><br><img src="assets/image/Tugu.jpg" width="100px" alt="Tugu" style="display: block; margin: 0 auto;">'
+        popup: '<b>Tugu Yogyakarta</b><br><img src="assets/image/Tugu.jpg" width="500px" alt="Tugu" style="display: block; margin: 0 auto;"><p>Jl. Jend. Sudirman, Gowongan, Kecamatan Jetis, Kota Yogyakarta, DI. Yogyakarta</p>'
       },
       { coords: [-7.752107, 110.377329],
-        popup: '<b>Monumen Jogja Kembali</b><br><img src="assets/image/Monjali.jpg" width="100px" alt="Monjali" style="display: block; margin: 0 auto;">'
+        popup: '<b>Monumen Jogja Kembali</b><br><img src="assets/image/Monjali.jpg" width="500px" alt="Monjali" style="display: block; margin: 0 auto;"><p>Jl. Ring Road Utara, Jongkang, Sariharjo, Kecamatan Ngaglik, Kabupaten Sleman, DI. Yogyakarta</p>'
       }
     ];
 
