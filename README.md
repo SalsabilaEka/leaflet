@@ -1,1 +1,3 @@
-<h3>Map Project using Ionic Framework</h3>
+# Praktikum Pemrograman Perangkat Bergerak Lanjut
+Menampilkan peta menggunakan Iconic Framework <br>
+Produk: [MyMap](https://leaflet-woad.vercel.app/)
